@@ -89,10 +89,10 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('Comment',                           a:base03, '',       s:italic,    '')
   call s:hi('Conditional',                       a:purple, '',       '',          '')
   call s:hi('Constant',                          a:orange, '',       '',          '')
-  call s:hi('Define',                            a:purple, '',       '',          '')
+  call s:hi('Define',                            a:blue, '',       '',          '')
   call s:hi('Delimiter',                         a:brown,  '',       '',          '')
   call s:hi('Float',                             a:orange, '',       '',          '')
-  call s:hi('Function',                          a:blue,   '',       '',          '')
+  call s:hi('Function',                          a:white,   '',       '',          '')
 
   call s:hi('Identifier',                        a:cyan,   '',       '',          '')
   call s:hi('Include',                           a:purple, '',       '',          '')
@@ -155,7 +155,7 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
 
   call s:hi('javaScript',                        a:base05, '',       '',          '')
   call s:hi('javaScriptNumber',                  a:orange, '',       '',          '')
-  call s:hi('javaScriptBraces',                  a:base05, '',       '',          '')
+  call s:hi('javaScriptBraces',                  a:base04, '',       '',          '')
 
   call s:hi('jsonKeyword',                       a:green,  '',       '',          '')
   call s:hi('jsonQuote',                         a:green,  '',       '',          '')
@@ -195,9 +195,11 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('pythonRepeat',                      a:purple, '',       '',          '')
   call s:hi('pythonOperator',                    a:purple, '',       '',          '')
 
-  call s:hi('rubyConstant',                      a:yellow, '',       '',          '')
-  call s:hi('rubySymbol',                        a:green,  '',       '',          '')
+  call s:hi('rubyFunction',                      a:cyan,   '',       '',          '')
+  call s:hi('rubyConstant',                      a:purple, '',       '',          '')
+  call s:hi('rubySymbol',                        a:purple, '',       '',          '')
   call s:hi('rubyAttribute',                     a:blue,   '',       '',          '')
+  call s:hi('rubyKeywordAsMethod',               a:red,   '',       '',          '')
   call s:hi('rubyInterpolation',                 a:green,  '',       '',          '')
   call s:hi('rubyInterpolationDelimiter',        a:brown,  '',       '',          '')
   call s:hi('rubyStringDelimiter',               a:green,  '',       '',          '')
@@ -283,14 +285,22 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
     call s:hi('@punctuation.special',              a:cyan,   '',       '',          '')
     call s:hi('@parameter',                        a:base07, '',       '',          '')
     call s:hi('@type',                             a:yellow, '',       '',          '')
-    call s:hi('@function',                         a:blue,   '',       '',          '')
+    call s:hi('@function',                         a:white,  '',       '',          '')
+    call s:hi('@comment',                          a:yellow, '',       '',          '')
+
+    call s:hi('@string.special.symbol.ruby',       a:red,    '',       '',          '')
+    call s:hi('@punctuation.special.ruby',         a:brown,    '',       '',          '')
+    call s:hi('@function.call.ruby',               a:cyan,   '',       '',          '')
+    call s:hi('@lsp.type.method.ruby',             a:cyan,   '',       '',          '')
 
     call s:hi('@tag.delimiter',                    a:cyan,   '',       '',          '')
+    call s:hi('@constant',                         a:red,    '',       '',          '')
     call s:hi('@property',                         a:base07, '',       '',          '')
     call s:hi('@method',                           a:blue,   '',       '',          '')
     call s:hi('@parameter',                        a:yellow, '',       '',          '')
     call s:hi('@constructor',                      a:base07, '',       '',          '')
     call s:hi('@variable',                         a:base06, '',       '',          '')
+    call s:hi('@variable.parameter',               a:blue,   '',       '',          '')
     call s:hi('@operator',                         a:orange, '',       '',          '')
     call s:hi('@tag',                              a:base07, '',       '',          '')
     call s:hi('@keyword',                          a:purple, '',       '',          '')
@@ -302,6 +312,9 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
     call s:hi('@namespace',                        a:base07, '',       '',          '')
     call s:hi('@symbol',                           a:green,  '',       '',          '')
     call s:hi('@exception',                        a:red,    '',       '',          '')
+
+    call s:hi('@function.call',                    a:cyan,   '',       '',          '')
+    call s:hi('@method.call',                      a:cyan,   '',       '',          '')
   endif
 
 
