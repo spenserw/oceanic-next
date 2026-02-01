@@ -281,7 +281,7 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
     " TreeSitter stuff
     call s:hi('@include',                          a:purple, '',       '',          '')
     call s:hi('@punctuation.bracket',              a:cyan,   '',       '',          '')
-    call s:hi('@punctuation.delimiter',            a:cyan,   '',       '',          '')
+    call s:hi('@punctuation.delimiter',            a:white,  '',       '',          '')
     call s:hi('@punctuation.special',              a:cyan,   '',       '',          '')
     call s:hi('@parameter',                        a:base07, '',       '',          '')
     call s:hi('@type',                             a:yellow, '',       '',          '')
@@ -289,9 +289,10 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
     call s:hi('@comment',                          a:yellow, '',       '',          '')
 
     call s:hi('@string.special.symbol.ruby',       a:red,    '',       '',          '')
-    call s:hi('@punctuation.special.ruby',         a:brown,    '',       '',          '')
+    call s:hi('@punctuation.special.ruby',         a:brown,  '',       '',          '')
     call s:hi('@function.call.ruby',               a:cyan,   '',       '',          '')
-    call s:hi('@lsp.type.method.ruby',             a:cyan,   '',       '',          '')
+    call s:hi('@lsp.type.method.ruby',             a:blue,   '',       '',          '')
+
 
     call s:hi('@tag.delimiter',                    a:cyan,   '',       '',          '')
     call s:hi('@constant',                         a:red,    '',       '',          '')
