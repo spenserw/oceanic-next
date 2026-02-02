@@ -292,7 +292,7 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
     call s:hi('@punctuation.special.ruby',         a:brown,  '',       '',          '')
     call s:hi('@function.call.ruby',               a:cyan,   '',       '',          '')
     call s:hi('@lsp.type.method.ruby',             a:blue,   '',       '',          '')
-
+    call s:hi('@variable.member.ruby',             a:blue,   '',       '',          '')
 
     call s:hi('@tag.delimiter',                    a:cyan,   '',       '',          '')
     call s:hi('@constant',                         a:red,    '',       '',          '')
